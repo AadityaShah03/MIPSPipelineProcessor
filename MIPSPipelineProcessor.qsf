@@ -86,3 +86,48 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE controlUnitWaveform.vwf
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/altera/13.0sp1/Lab3/controlUnitWaveform.vwf"
+set_global_assignment -name VHDL_FILE nbitmux8to1.vhd
+set_global_assignment -name VHDL_FILE nBitMux4to1.vhd
+set_global_assignment -name VHDL_FILE nBitAddSub.vhd
+set_global_assignment -name VHDL_FILE nBit2to1Mux.vhd
+set_global_assignment -name VHDL_FILE Nbit_d_register.vhd
+set_global_assignment -name VHDL_FILE mux_8to1.vhd
+set_global_assignment -name VHDL_FILE mux_4to1.vhd
+set_global_assignment -name VHDL_FILE mux_1to2.vhd
+set_global_assignment -name VHDL_FILE MIPSRegisterFile.vhd
+set_global_assignment -name VHDL_FILE MIPS_ALU_8Bit.vhd
+set_global_assignment -name VHDL_FILE full_adder.vhd
+set_global_assignment -name VHDL_FILE enardFF_2.vhd
+set_global_assignment -name VHDL_FILE decoder_3to8.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE nbitmux8to1.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name VECTOR_WAVEFORM_FILE nbitmux4to1.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity nbitmux4to1 -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity nbitmux4to1 -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity nbitmux4to1 -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -entity nbitmux4to1 -section_id Top
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VECTOR_WAVEFORM_FILE nbitaddsub.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE nbit2to1mux.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE nbit_d_register.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE mux_8to1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE mux_4to1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE mux_1to2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE full_adder.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE decoder_3to8.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE enardff_2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE mips_alu_8bit.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE mipsregisterfile.vwf
+set_global_assignment -name VHDL_FILE hazardunit.vhd
+set_global_assignment -name VHDL_FILE comparator8bit.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE comparator8bit.vwf
+set_global_assignment -name VHDL_FILE comparator5bit.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE comparator5bit.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE hazardunit.vwf
+set_global_assignment -name VHDL_FILE forwardingunit.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE forwardingunit.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Abdullah/Desktop/MIPSPipelineProcessor/forwardingunit.vwf"
