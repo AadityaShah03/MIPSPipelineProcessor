@@ -49,3 +49,20 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name MIF_FILE InstructionMemory.mif
+set_global_assignment -name MIF_FILE DataMemory.mif
+set_global_assignment -name VHDL_FILE Nbit_d_register.vhd
+set_global_assignment -name VHDL_FILE nbitmux8to1.vhd
+set_global_assignment -name VHDL_FILE nBitMux4to1.vhd
+set_global_assignment -name VHDL_FILE nBitAddSub.vhd
+set_global_assignment -name VHDL_FILE nBit2to1Mux.vhd
+set_global_assignment -name VHDL_FILE mux_8to1.vhd
+set_global_assignment -name VHDL_FILE mux_4to1.vhd
+set_global_assignment -name VHDL_FILE mux_1to2.vhd
+set_global_assignment -name VHDL_FILE MIPS_ALU_8Bit.vhd
+set_global_assignment -name VHDL_FILE MIPSRegisterFile.vhd
+set_global_assignment -name VHDL_FILE full_adder.vhd
+set_global_assignment -name VHDL_FILE enardFF_2.vhd
+set_global_assignment -name VHDL_FILE decoder_3to8.vhd
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
