@@ -7,8 +7,7 @@ entity StopNHoldEnardff is
 		d        : in    std_logic;
 		en       : in    std_logic;
 		clk      : in    std_logic;
-		q        : out   std_logic;
-		int_d1	: out   std_logic
+		q        : out   std_logic
   );
 end entity StopNHoldEnardff;
 
@@ -50,7 +49,4 @@ begin
         o_qbar     => open
    );
 	
-	int_d1 <= int_d;
-	
-
 end architecture struct;
