@@ -49,6 +49,41 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name MIF_FILE InstructionMemory.mif
+set_global_assignment -name MIF_FILE DataMemory.mif
+set_global_assignment -name VHDL_FILE Nbit_d_register.vhd
+set_global_assignment -name VHDL_FILE nbitmux8to1.vhd
+set_global_assignment -name VHDL_FILE nBitMux4to1.vhd
+set_global_assignment -name VHDL_FILE nBitAddSub.vhd
+set_global_assignment -name VHDL_FILE nBit2to1Mux.vhd
+set_global_assignment -name VHDL_FILE mux_8to1.vhd
+set_global_assignment -name VHDL_FILE mux_4to1.vhd
+set_global_assignment -name VHDL_FILE mux_1to2.vhd
+set_global_assignment -name VHDL_FILE MIPS_ALU_8Bit.vhd
+set_global_assignment -name VHDL_FILE MIPSRegisterFile.vhd
+set_global_assignment -name VHDL_FILE full_adder.vhd
+set_global_assignment -name VHDL_FILE enardFF_2.vhd
+set_global_assignment -name VHDL_FILE decoder_3to8.vhd
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name QIP_FILE InstructionMemory.qip
+set_global_assignment -name QIP_FILE DataMemory.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE DFFWaveform.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity enardff_2 -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity enardff_2 -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity enardff_2 -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -entity enardff_2 -section_id Top
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VHDL_FILE StopNHoldEnardff.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE StopNHoldDFFWaveform.vwf
+set_global_assignment -name VHDL_FILE pipelineReg.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE PipelineRegWaveform.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/altera/13.0sp1/Lab3/PipelineRegWaveform.vwf"
 set_global_assignment -name VHDL_FILE nbitmux8to1.vhd
 set_global_assignment -name VHDL_FILE nBitMux4to1.vhd
 set_global_assignment -name VHDL_FILE nBitAddSub.vhd
